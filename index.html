@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Nurture Nest</title>
+  </head>
+</html>
+<body>
+
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">
+            <i class="ri-parent-line"></i> Nurture Nest
+          </a>
+    
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                  <i class="ri-home-line"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+    
+              <li class="nav__item">
+                <a href="#featured" class="nav__link">
+                  <i class="ri-book-3-line"></i>
+                  <span>Resources</span>
+                </a>
+              </li>
+    
+              <li class="nav__item">
+                <a href="#blogs" class="nav__link">
+                  <i class="ri-price-tag-3-line"></i>
+                  <span>Blogs</span>
+                </a>
+              </li>
+    
+              <li class="nav__item">
+                <a href="#testimonial" class="nav__link">
+                  <i class="ri-bookmark-line"></i>
+                  <span>Reviews</span>
+                </a>
+              </li>
+    
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class="ri-message-3-line"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+            <div class="nav__actions">
+       
+          <!-- Search button -->
+          <i class="ri-search-line search-button" id="search-button"></i>
+    
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+    
+          <!-- Login button -->
+          <i class="ri-user-line login-button" id="login-button"></i>
+    
+             <!-- Username display -->
+          <span id="username-display" style="display: none;"></span>
+    
+          <!-- Add this HTML code where you want the logout button to appear -->
+          <button type="button" id="logout-button" class="logout__button button" style="display: none;">Log Out</button>
+        </div>
+       </nav>
+      </header>
+
+
+
+
+
+  <!--==================== SEARCH ====================-->
+  <div class="search" id="search-content">
+    <form action="" class="search__form">
+      <i class="ri-search-line search__icon"></i>
+      <input
+        type="search"
+        placeholder="What are you looking for?"
+        class="search__input"
+      />
+    </form>
+
+    <i class="ri-close-line search__close" id="search-close"></i>
+  </div>
+
+
+
+
+
+
+ <!--==================== LOGIN ====================-->
+ <div class="login grid" id="login-content">
+  <form class="login__form grid" >
+    <img src="" alt="">
+    <h3 class="login__title">Log In</h3>
+<div class="login__group grid">
+  <div>
+    <label for="login-email" class="login__label">Email</label>
+    <input
+      type="email"
+      placeholder="Write your email"
+      name="email"
+      id="email"
+      class="login__input"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="login-pass" class="login__label">Password</label>
+    <input
+      type="password" 
+      placeholder="Enter your password"
+      name="password"
+      class="login__input"
+      id="password"
+      required
+    />
+  </div>
+</div>
+
+    
+     <span class="login__signup">
+        You do not have an account? <a href="#" onclick="showRegisterForm()">Register</a>
+      </span>
+
+      <a href="#" class="login__forgot"> You forgot your password </a>
+
+      <button type="button" id="lsubmitdata" name="lsubmitdata" class="login__button button">Log In</button>
+
+  </form>
+
+  <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+<!--=============== REGISTER ===============-->
+
+<div class="register grid" id="register-content">
+  <form class="login__form grid">
+    <h3 class="register__title">Register</h3>
+<div class="register__group grid">
+  <div>
+
+    <div>
+      <label for="register-user" class="register__label">Username</label>
+      <input
+        type="text" 
+        placeholder="Enter your username"
+        name="rusername"
+        class="register__input"
+        id="rusername"
+        required
+      />
+    </div>
+
+    <label for="register-email" class="register__label">Email</label>
+    <input
+      type="email"
+      placeholder="Write your email"
+      name="remail"
+      class="register__input"
+      id="remail"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="register-pass" class="register__label">Password</label>
+    <input
+      type="password" 
+      placeholder="Enter your password"
+      name="rpassword"
+      class="register__input"
+      id="rpassword"
+      required
+    />
+  </div>
+
+  
+ 
+</div>
+
+    
+     <span class="register__signup">
+        You have an account? <a href="#" onclick="showLoginForm()">Login</a>
+      </span>
+
+
+    <!--<a href="#" class="register__forgot"> You forgot your password </a>-->
+
+      <button type="button" id="submitdata" name="submitdata" class="register__button button">Register now</button>
+    
+  </form>
+
+
+</div>
+
+
+
+
+  
+  
+  <!--==================== MAIN ====================-->
+  <main class="main">
+ 
+    
+
+   <!--==================== HOME ====================-->
+   <section class="home section" id="home">
+    <div class="home__container container grid">
+      <div class="home__data">
+        <h1 class="home__title">
+          Empowering Parenthood: <br />
+          Advice, Insights, and Services for Every Step!
+        </h1>
+
+        <p class="home__description">
+          Your go-to hub for expert parenting advice, diverse services, and insightful blogs-empowering your journey into parenthood with confidence and support
+        </p>
+
+        <a href="#" class="button">Learn More</a>
+        <a href="#contact" class="button">Contact</a>
+      </div>
+
+
+      <div class="home__images">
+       
+            
+            <img src="img/image.png" width="100%" alt="image" />
+          
+      
+      </div>
+    </div>
+  </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section">
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-file-pdf-2-line"></i>
+            <h3 class="services__title">Free PDFs</h3>
+            <p class="services__description">No Additional Charges</p>
+          </article>
+  
+          <article class="services__card">
+            <i class="ri-community-line"></i>
+            <h3 class="services__title">Community Support</h3>
+            <p class="services__description">100% Via Experts</p>
+          </article>
+  
+          <article class="services__card">
+            <i class="ri-customer-service-2-line"></i>
+            <h3 class="services__title">24/7 Support</h3>
+            <p class="services__description">Call us anytime</p>
+          </article>
+        </div>
+      </section>
+  
+
+    <!--==================== FEATURED ====================-->
+    <section class="featured section" id="featured">
+        <h2 class="section__title">Resources</h2>
+  
+        <div class="featured__container container">
+        
+          <div class="featured__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="featured__card swiper-slide">
+                <img
+                  src="img/book1-img.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+  
+                <h2 class="featured__title">What and When</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">The All in-one-Guide </span>
+                </div>
+  
+                 <!-- Add an event listener to the button -->
+  <button class="button" id="readpdf1">Read Me</button>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Find the button by its ID
+          var readPdfButton = document.getElementById('readpdf1');
+  
+          // Attach click event listener to the button
+          readPdfButton.addEventListener('click', function() {
+              // Replace 'path_to_your_pdf_file.pdf' with the actual path to your PDF file
+              var pdfUrl = 'PDFs/ww.pdf';
+  
+              // Open PDF in a new window
+              window.open(pdfUrl, '_blank');
+          });
+      });
+  </script>
+  
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+  
+              <article class="featured__card swiper-slide">
+                <img
+                  src="img/book2-img.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+  
+                <h2 class="featured__title">The No-Cry</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">Baby Sleeping Solution</span>
+                </div>
+  
+         
+                 <!-- Add an event listener to the button -->
+      <button class="button" id="readpdf2">Read Me</button>
+  </article>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Find the button by its ID
+          var readPdfButton = document.getElementById('readpdf2');
+  
+          // Attach click event listener to the button
+          readPdfButton.addEventListener('click', function() {
+              // Replace 'path_to_your_pdf_file.pdf' with the actual path to your PDF file
+              var pdfUrl = 'PDFs/The_no_Cry_Sleep_Solution_pdf_compressed.pdf';
+  
+              // Open PDF in a new window
+              window.open(pdfUrl, '_blank');
+          });
+      });
+  </script>
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+  
+              <article class="featured__card swiper-slide">
+                <img
+                  src="img/book3-img.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+  
+                <h2 class="featured__title">Cribsheet</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">A Data-Drive Guide</span>
+                </div>
+  
+                <button class="button" id="readpdf3">Read Me</button>
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+  
+              <article class="featured__card swiper-slide">
+                <img
+                  src="img/book4-img.jpg"
+                  alt="image"
+                  class="featured__img"
+                />
+  
+                <h2 class="featured__title">The Happiest Baby</h2>
+                <div class="featured__prices">
+                  <span class="featured__discount">The New Way to Calm Crying</span>
+                  
+                </div>
+  
+                <button class="button" id="readpdf4">Read Me</button>
+                <div class="featured__actions">
+                  <button><i class="ri-search-line"></i></button>
+                  <button><i class="ri-heart-3-line"></i></button>
+                  <button><i class="ri-eye-line"></i></button>
+                </div>
+              </article>
+            </div>
+  
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+  
+  
+  <div class="featured__container container">
+      <h3 class="section__title">Recipes</h3>
+      <div class="testimonial__container container">
+        <div class="testimonial__swiper swiper">
+          <div class="swiper-wrapper">
+  
+            <article class="testimonial__card swiper-slide">
+              <img
+                src="img/recipe-img-01.jpg"
+                alt="image"
+                class="testimonial__img"
+              />
+  
+              <h2 class="testimonial__title">Grilled Chicken with Farro & Roasted
+                Cauliflower</h2>
+              <p class="testimonial__description">
+                Serve the chicken over the farro and vegetables. Sprinkle with
+                mint and pine nuts. Serve with lemon wedges, if desired.
+              </p>
+  
+              <div class="testimonial__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </article>
+  
+            <article class="testimonial__card swiper-slide">
+              <img
+                src="img/recipe2.jpg"
+                alt="image"
+                class="testimonial__img"
+              />
+  
+              <h2 class="testimonial__title">Grilled Chicken with Farro & Roasted
+                Cauliflower</h2>
+              <p class="testimonial__description">
+                Serve the chicken over the farro and vegetables. Sprinkle with
+                mint and pine nuts. Serve with lemon wedges, if desired.
+              </p>
+  
+              <div class="testimonial__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </article>
+  
+            <article class="testimonial__card swiper-slide">
+              <img
+                src="img/recipe3.jpg"
+                alt="image"
+                class="testimonial__img"
+              />
+  
+              <h2 class="testimonial__title">Grilled Chicken with Farro & Roasted
+                Cauliflower</h2>
+              <p class="testimonial__description">
+                Serve the chicken over the farro and vegetables. Sprinkle with
+                mint and pine nuts. Serve with lemon wedges, if desired.
+              </p>
+  
+              <div class="testimonial__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </article>
+  
+            <article class="testimonial__card swiper-slide">
+              <img
+                src="img/recipe4.jpg"
+                alt="image"
+                class="testimonial__img"
+              />
+  
+              <h2 class="testimonial__title">Grilled Chicken with Farro & Roasted
+                Cauliflower</h2>
+              <p class="testimonial__description">
+                Serve the chicken over the farro and vegetables. Sprinkle with
+                mint and pine nuts. Serve with lemon wedges, if desired.
+              </p>
+  
+              <div class="testimonial__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </article>
+  
+            
+            <article class="testimonial__card swiper-slide">
+              <img
+                src="img/recipe5.jpg"
+                alt="image"
+                class="testimonial__img"
+              />
+  
+              <h2 class="testimonial__title">Grilled Chicken with Farro & Roasted
+                Cauliflower</h2>
+              <p class="testimonial__description">
+                Serve the chicken over the farro and vegetables. Sprinkle with
+                mint and pine nuts. Serve with lemon wedges, if desired.
+              </p>
+  
+              <div class="testimonial__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </article>
+  
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <br /><br />
+    </div>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  {{!-- 
+  <div class="featured__container container">
+  <h3>Videos</h3> --}}
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+      </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial section" id="testimonial">
+        <h2 class="section__title">Customer Opinions</h2>
+  
+        <div class="testimonial__container container">
+          <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+            
+              <article class="testimonial__card swiper-slide">
+                <img
+                  src="img/testimonial-perfil-1.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+  
+                <h2 class="testimonial__title">Emma</h2>
+                <p class="testimonial__description">
+                  The best website to buy books, the purchase is very easy to
+                  make and has great discounts.
+                </p>
+  
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </article>
+              
+              <article class="testimonial__card swiper-slide">
+                <img
+                 src="img/testimonial-perfil-3.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+  
+                <h2 class="testimonial__title">Loz</h2>
+                <p class="testimonial__description">
+                  The best website to buy books, the purchase is very easy to
+                  make and has great discounts.
+                </p>
+  
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </article>
+              
+              <article class="testimonial__card swiper-slide">
+                <img
+                 src="img/testimonial-perfil-4.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+  
+                <h2 class="testimonial__title">Rial</h2>
+                <p class="testimonial__description">
+                  The best website to buy books, the purchase is very easy to
+                  make and has great discounts.
+                </p>
+  
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </article>
+              
+              <article class="testimonial__card swiper-slide">
+                <img
+                 src="img/testimonial-perfil-2.png"
+                  alt="image"
+                  class="testimonial__img"
+                />
+  
+                <h2 class="testimonial__title">Rock</h2>
+                <p class="testimonial__description">
+                  The best website to buy books, the purchase is very easy to
+                  make and has great discounts.
+                </p>
+  
+                <div class="testimonial__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </article>
+  
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <br><br>
+      </section>
+   
+   <!-- Contact section -->
+
+   <section class="contact" id="contact">
+    <div class="container min-vh-100">
+      <div class="row justify-content-center">
+        <h1 class="section__title">
+          <br><br>
+           Make an Appointment 
+          <br>
+        </h1>
+        <br>
+        <br><br>
+
+        <div class="col-md-10" data-aos="flip-down">
+          <form action="/NurtureNest/appointment" method="post">
+             <div class="inputBox">
+    <input type="text" id="name" name="name" placeholder="full name" required />
+    <input type="number" id="number" name="number" placeholder="phone" required />
+  </div>
+
+  <div class="inputBox">
+    <input type="email" id="email" name="email" placeholder="your email" required />
+    <select name="time" id="time">
+                <option value="" disabled selected>
+                  Make an appointment
+                </option>
+                <option value="09-11 am">09-11 am</option>
+                <option value="11-03 pm">11-03 pm</option>
+                <option value="03-06 pm">03-06 pm</option>
+                <option value="06-09 pm">06-09 pm</option>
+              </select>
+            </div>
+            <br>
+            <br>
+
+
+            <textarea
+              name="messages"
+              id="messages"
+              cols="30"
+              rows="10"
+              placeholder="message ( optional )"
+            ></textarea>
+            <br>
+            <!-- <br> -->
+            <!-- <br> -->
+
+            <input
+              type="submit"
+              name="make"
+              id="make"
+              class="button"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+    <!--==================== JOIN ====================-->
+    <section class="join section">
+        <div class="join__container">
+          <img src="img/join-bg.jpg" alt="image" class="join__bg" />
+  
+          <div class="join__data container grid">
+            <h2 class="join__title section__title">
+              Subscribe To Receive <br />
+              The Latest Updates
+            </h2>
+  
+        <form id="subscribeForm" class="join__form">
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="Enter email"
+            class="join__input"
+            required
+          />
+          <button type="submit" class="join__button button">
+            Subscribe
+          </button>
+            </form>
+          </div>
+        </div>
+      </section>
+  
+
+
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div>
+        <a href="#" class="footer__log">
+          <i class="ri-parent-line"></i> Nurture Nest
+        </a>
+
+        <p class="footer__description">
+          Empowering journeys from <br>bump to baby and beyond...
+        </p>
+      </div>
+
+      <div class="footer__data grid">
+        <div>
+          <h3 class="footer__title">About</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Awards</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Terms of services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link"> Blogs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link"> Community</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Our team</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link"> Help center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Contact</h3>
+          <ul class="footer__links">
+            <li>
+              <address class="footer__info">
+                Av. Hacienda <br />
+                Lima 4321, Perú
+              </address>
+            </li>
+
+            <li>
+              <address class="footer__info">
+                e.book@email.com <br />
+                0987-654-321
+              </address>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Social</h3>
+
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+              ><i class="ri-facebook-circle-line"></i
+            ></a>
+
+            <a
+              href=" https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href=" https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-twitter-x-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="footer__copy">
+      &#169; All Rights Reserved By Nurture Nest
+    </span>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="js/scrollreveal.min.js"></script>
+<!--================SWEET ALERTS=======================-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--=============== SWIPER JS ===============-->
+  <script src="js/swiper-bundle.min.js"></script>
+<!--=============== MAIN JS ===============-->
+<script src="js/main.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="js/pdf.js"></script>
+
+
+<!--=============== LOGIN_REGISTER FIREBASE ===============-->
+
+<script type="module">
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+import { getDatabase,set,ref,update} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js"; 
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword,signOut } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+import { get } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB6xSLR_XKinTiQQ8I4k_2PySuhqbZbWjI",
+    authDomain: "babybridges-5f622.firebaseapp.com",
+    databaseURL: "https://babybridges-5f622-default-rtdb.firebaseio.com",
+    projectId: "babybridges-5f622",
+    storageBucket: "babybridges-5f622.appspot.com",
+    messagingSenderId: "603750500663",
+    appId: "1:603750500663:web:362dd1c557aa55a6efb2b2"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth();
+  const database = getDatabase(app);
+
+  submitdata.addEventListener('click' , (e) => {
+
+       var REmail = document.getElementById("remail").value;
+       var RPassword = document.getElementById("rpassword").value;
+       var RUsername = document.getElementById("rusername").value;
+
+
+
+    createUserWithEmailAndPassword(auth, REmail, RPassword, RUsername)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          set(ref(database, 'users/' + user.uid),{
+            username : RUsername,
+            email : REmail,
+            password : RPassword
+          })
+
+             .then(()=>{
+
+              Swal.fire({
+            title: 'Registered Successful!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+            }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            window.location.reload();
+          }
+          });
+              //Data saved successfully
+             })
+             .catch((error)=>{
+              Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Something Went Wrong",
+                });
+             })
+
+
+          // document.getElementById("register-result").innerHTML = "Welcome<br>" + registerEmail + " was registered Successfully";
+          // document.getElementById("login-result").innerHTML = ""; // Clear login result
+        })
+        .catch((error) => {
+          const errorcode = error.code;
+         Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Invalid Registration Credentials",
+                });
+        });
+
+    });
+
+
+
+function toggleLoginElements(isLoggedIn) {
+  const loginForm = document.getElementById('login-content');
+  const logoutButton = document.getElementById('logout-button');
+  const loginIcon = document.getElementById('login-button');
+    const usernameDisplay = document.getElementById('username-display');
+
+
+  if (isLoggedIn) {
+    loginForm.style.display = 'none';
+    loginIcon.style.display = 'none';
+    logoutButton.style.display = 'block';
+
+      var userRef = ref(database, 'users/' + user.uid);
+      get(userRef).then((snapshot) => {
+        var userData = snapshot.val();
+        var username = userData ? userData.username : 'User';
+        usernameDisplay.textContent = 'Welcome, ' + username + '!';
+        usernameDisplay.style.display = 'block'; // Show the username display span
+      });
+      
+  }
+   else {
+    loginForm.style.display = 'grid';
+    loginIcon.style.display = 'grid';
+    logoutButton.style.display = 'none';
+    usernameDisplay.style.display = 'none'; 
+
+  }
+}
+
+
+let user = null;
+
+
+// Event listener for the login button
+lsubmitdata.addEventListener('click', (e) => {
+  console.log('Login button clicked');
+
+  var Email = document.getElementById('email').value; // Retrieve email value
+  var Password = document.getElementById('password').value; // Retrieve password value
+
+  signInWithEmailAndPassword(auth, Email, Password)
+    .then((userCredential) => {
+      user = userCredential.user; // Update the global user variable
+
+      var lgDate = new Date();
+      update(ref(database, 'user/' + user.uid), {
+        last_login: lgDate,
+      })
+        .then(() => {
+           Swal.fire({
+            title: 'Login Successful!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+            })
+          toggleLoginElements(true); // Show logout button
+           localStorage.setItem('userLoggedIn', 'true');
+        })
+        .catch((error) => {
+          alert(error);
+        });
+    })
+    .catch((error) => {
+      const errorcode = error.code;
+      const errorMessage = error.message;
+
+       Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Invalid login Credentials",
+                });
+    });
+  // ... (Rest of the login logic)
+});
+
+// Event listener for the logout button
+const logoutButton = document.getElementById('logout-button');
+if (logoutButton) {
+  logoutButton.addEventListener('click', (e) => {
+    signOut(auth)
+      .then(() => {
+         Swal.fire({
+            title: 'Logout Successful!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+            })
+        toggleLoginElements(false);
+         localStorage.removeItem('userLoggedIn');
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  });
+}
+  // Check if the user was logged in before reloading the page
+  window.addEventListener('load', () => {
+    const userLoggedIn = localStorage.getItem('userLoggedIn');
+    if (userLoggedIn === 'true') {
+      // User was logged in, fetch user data and display elements accordingly
+      toggleLoginElements(true);
+
+    }
+  });
+
+    
+  </script>
+
+
+<!--=============== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="ri-arrow-up-line"></i>
+</a>
+
+<!--=============== CHAT-BOT ==========-->
+
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/572189cc-90aa-42ee-8b8c-787635906b97/webchat/config.js" defer></script>
+
+</body>
+</html>
